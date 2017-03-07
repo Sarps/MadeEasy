@@ -1,0 +1,235 @@
+body {
+	width: 100%;
+	background-color: white;
+	color: rgb(0,0,100);
+	font-style: italic;
+	font-family: cursive;
+	overflow: hidden;
+}
+
+h5{
+	margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  font-size: 1.25rem;
+}
+
+.container {
+	padding: 5px;
+	width: 100%;
+	overflow-y: hidden;
+}
+
+#graph {
+	/* padding-right: auto; */
+	padding: 15px;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+}
+
+.sheet {
+	background-color: rgba(128,128,64, 0.1);
+	max-height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.sheet {
+	box-shadow: 0 -1px 1px rgba(0,0,0,0.15), 0 -5px 0 -3px #eee;
+}
+
+.sheet::-webkit-scrollbar {
+    width: 0.6em;
+}
+ 
+.sheet::-webkit-scrollbar-track {
+    -webkit-box-shadow: -1px -1px 2px rgba(0,0,0,0.4);
+}
+ 
+.sheet::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 255, 0.3);
+}
+
+.sheet::-webkit-scrollbar-button {
+    background-color: rgba(0, 200, 0, 0.7);
+	-webkit-box-shadow: -1px -1px 5px rgba(0,0,0,0.4);
+}
+
+.sheet::-webkit-scrollbar-corner {
+    background-color: black;
+}
+
+.sheet::-webkit-scrollbar-thumb:hover{
+	background-color:rgba(0, 200, 0, 0.6);
+}
+
+.sheet::-webkit-scrollbar-thumb:active{
+	background-color:rgba(0, 235, 0, 0.7);
+} 
+
+.sheet::-webkit-scrollbar-button:hover{
+	background-color:rgba(0, 0, 255, 0.5);
+}
+
+.sheet::-webkit-scrollbar-button:active{
+	background-color:rgba(0, 0, 255, 0.8);
+} 
+
+.sheet #cr {
+	text-decoration: none;
+	background-color: transparent;
+	padding-right: 15px;
+	color: black;
+	float: right;
+	text-align: center;
+}
+
+.sheet #cr:hover {
+	text-decoration: underline;
+}
+
+#graph {
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+	box-shadow: -2px -3px 1px rgba(0, 0, 0, 0.3), 0 0 3px rgba(0, 0, 0, 0.06) inset; 
+}
+
+
+li {
+	padding-left: 10px;
+	border-bottom: 1px solid rgba(0,0,255,0.2);
+}
+
+li:hover, li.hover {
+  background-color: rgba(224, 240, 240, 0.5);
+  -webkit-transition: all 0.2s;
+  -moz-transition:    all 0.2s;
+  -ms-transition:     all 0.2s;
+  -o-transition:      all 0.2s;
+  box-shadow: -2px -1px 1px rgba(0, 0, 0, 0.3), -2px -1px 1px rgba(0, 0, 0, 0.3) inset; 
+}
+
+li:first-child {
+	margin-top: 1px;
+	border-top: 1px solid rgba(0,0,255,0.3);
+}
+
+#topic {
+	color: red;
+	text-transform: uppercase;
+	text-align: center;
+	border-bottom: 1px solid rgba(0,0,255,0.3);
+	padding-bottom: 3px;
+	padding-top: 15px;
+	margin-bottom: 0;
+}
+
+ol {
+		margin-top: 0;
+		margin-bottom: 1px;
+}
+
+.redline{
+  border-left: 1px solid #ffaa9f;
+  border-right: 1px solid #ffaa9f;
+  width: 3px;
+  float: left;
+  min-height: 92%;
+  max-height: 90%;
+  margin-left: 40px;
+  z-index: 1000;
+}
+
+#canvas {
+	width: 100%;
+	height: 100%;
+}
+
+/* Large devices (large desktops, 1200px and up)
+*No media query is needed...
+*/ 
+
+
+/* Medium devices (desktops, 1200px and below) */ 
+@media screen and (max-width: 1200px) {
+	#graph {
+		padding: 15px;
+	}
+	.sheet {
+		padding-top: 20px;
+	}
+}
+
+/* Small devices (tablets, 992px and below) */ 
+@media screen and (max-width: 992px) {
+	#graph {
+		padding: 15px;
+	}
+	.sheet {
+		padding-top: 20px;
+	}
+} 
+
+/* Tablets (phones, less than 768px) */ 
+@media screen and (max-width: 768px) {
+	#graph {
+		padding: 10px;
+	}
+	.sheet {
+		padding-top: 10px;
+	}
+} 
+
+/* large mobile devices */
+@media screen and (max-width: 575px) {
+	#graph {
+		padding: 5px;
+	}
+	#graph {
+		box-shadow: 0 -2px 1px rgba(0, 0, 0, 0.3), 0 0 3px rgba(0, 0, 0, 0.06) inset; 
+	}
+	.sheet {
+		padding-top: 5px;
+		height: 50%;
+	}
+	.sheet::-webkit-scrollbar {
+		width: 1em;
+	}
+	.redline{
+		height: 200%;
+	}
+} 
+
+/*Extra Small Devices */
+@media screen and (max-width: 400px) {
+	
+} 
+
+.license  {
+	display: inline-block;
+	font-size: 0.95em;
+	font-style: bold !important;
+	margin: 2px;
+	padding-top:  0;
+	color: white;
+	background-color: rgba(15, 15, 15, 0.4);
+	border-radius: 10px;
+}
+
+.license img {
+	border: 1px solid red;
+	float: left;
+	margin: 2px;
+	margin-top: 24px;
+	padding: 0;
+}
+
+.license a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+

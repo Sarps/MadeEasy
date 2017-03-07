@@ -1,0 +1,145 @@
+
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+body {
+	margin: 0;
+	font-weight: normal;
+	line-height: 1;
+	text-rendering: optimizeLegibility;
+	word-wrap: break-word;
+	-webkit-overflow-scrolling: touch;
+	-webkit-text-size-adjust: none;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+a {
+	background: transparent;
+}
+a:active, a:hover {
+	outline: 0;
+}
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+img {
+	border: 0;
+	max-width: 100%;
+	height: auto;
+}
+
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+div, h1, h5{
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	-webkit-font-variant-ligatures: common-ligatures;
+	-moz-font-variant-ligatures: common-ligatures;
+	font-variant-ligatures: common-ligatures;
+	text-rendering: optimizeLegibility;
+}
+
+
+/**
+ * links
+ * -
+ */
+
+a {
+	text-decoration: none;
+	line-height: inherit;
+}
+a img {
+	border: none;
+}
+
+.row {
+	width: 94%;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.row:before, .row:after {
+	content: "";
+	display: table;
+}
+.row:after {
+	clear: both;
+}
+.row .row {
+	width: auto;
+	max-width: none;
+	margin-left: -20px;
+	margin-right: -20px;
+}
+[class*="col-"], .bgrid {
+	float: left;
+}
+[class*="col-"] + [class*="col-"]:last-child {
+	float: right;
+}
+[class*="col-"] {
+	padding: 0 20px;
+}
+.col-twelve, .col-full {
+	width: 100%;
+}
+
+@media screen and (max-width:1024px) {
+	.row .row {
+		margin-left: -18px;
+		margin-right: -18px;
+	}
+	[class*="col-"] {
+		padding: 0 18px;
+	}
+}
+
+@media screen and (max-width:768px) {
+	.row {
+		width: auto;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	[class*="col-"] {
+		padding: 0 15px;
+	}
+}
+
+@media screen and (max-width:600px) {
+	.row {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	[class*="col-"] {
+		padding: 0 10px;
+	}
+}
+
+@media screen and (max-width:400px) {
+	.row {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	[class*="col-"] {
+		width: 100% !important;
+		float: none !important;
+		clear: both !important;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0;
+	}
+	[class*="col-"] + [class*="col-"]:last-child {
+		float: none;
+	}
+}
