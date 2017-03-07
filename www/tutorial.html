@@ -1,0 +1,148 @@
+
+<html lang="en">
+	<head>
+		<meta name="description" content="Every Course MadeEasy">  
+		<meta name="author" content="Oppong-Sarpong Emmanuel">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		
+		<link type="text/css" rel="stylesheet" href="css/grid.css">
+		<link type="text/css" rel="stylesheet" href="css/style.css">
+
+		<link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="images/favicons/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+		<link rel="manifest" href="images/favicons/manifest.json">
+		
+	</head>
+	<body>		
+		<div class="container"> 
+			<div class="row"> 
+				<div class="md-half sm-half  sheet">
+					<div class="redline"></div>
+					<h5 id="topic">  2 Position Complex Motion Generation</h5>
+					<ol id="lines">
+						<li>The Slider-Crank Mechanisms is one of the simplest mechanisms</li>
+						<li>It is a four bar linkage system, consisting of :</li>
+						<li></li>
+						<li>i) A crank - for circular motion</li>
+						<li>ii) A slider - for linear, to-and-fro, motion</li>
+						<li>iii) A coupler, and </li>
+						<li> iv) optionally, a ground.</li>
+						<li></li>
+						<li>The module on the graph shows the basic arrangement of the mechanism</li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ol>
+					<!-- <a id="cr" href=""> &copy; 2017 <b>Oppong-Sarpong Emmanuel</b> - KNUST</a> -->
+					<div class=" license">
+						<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" rel="dct:type">work</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/Sarps/" property="cc:attributionName" rel="cc:attributionURL">Emmanuel Oppong-Sarpong</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/Sarps/MadeEasy" rel="dct:source">https://github.com/Sarps/MadeEasy</a>. Permissions beyond the scope of this license may be available at <a xmlns:cc="http://creativecommons.org/ns#" href="sarpspersonal.netau.net/permissions/" rel="cc:morePermissions">sarpspersonal.netau.net/permissions/</a>.
+					</div>
+				</div> <!-- sheet -->
+				<div class="md-half sm-half" id="graph"></div> <!-- graph -->
+		<div> <!-- container -->
+	</body>
+	
+	<!--[if IE]><script type="text/javascript" src="js/tutorial/excanvas-compressed.js"></script><![endif]-->
+    <script src="js/tutorial/prototype-1.6.0.2.min.js"></script>
+   
+   	<!-- box2djs -->
+    <script src='js/box2d/common/b2Settings.min.js'></script>
+    <script src='js/box2d/common/math/b2Vec2.min.js'></script>
+    <script src='js/box2d/common/math/b2Mat22.min.js'></script>
+    <script src='js/box2d/common/math/b2Math.min.js'></script>
+    <script src='js/box2d/collision/b2AABB.min.js'></script>
+    <script src='js/box2d/collision/b2Bound.min.js'></script>
+    <script src='js/box2d/collision/b2BoundValues.min.js'></script>
+    <script src='js/box2d/collision/b2Pair.min.js'></script>
+    <script src='js/box2d/collision/b2PairCallback.min.js'></script>
+    <script src='js/box2d/collision/b2BufferedPair.min.js'></script>
+    <script src='js/box2d/collision/b2PairManager.min.js'></script>
+    <script src='js/box2d/collision/b2BroadPhase.min.js'></script>
+    <script src='js/box2d/collision/b2Collision.min.js'></script>
+    <script src='js/box2d/collision/Features.min.js'></script>
+    <script src='js/box2d/collision/b2ContactID.min.js'></script>
+    <script src='js/box2d/collision/b2ContactPoint.min.js'></script>
+    <script src='js/box2d/collision/b2Distance.min.js'></script>
+    <script src='js/box2d/collision/b2Manifold.min.js'></script>
+    <script src='js/box2d/collision/b2OBB.min.js'></script>
+    <script src='js/box2d/collision/b2Proxy.min.js'></script>
+    <script src='js/box2d/collision/ClipVertex.min.js'></script>
+    <script src='js/box2d/collision/shapes/b2Shape.min.js'></script>
+    <script src='js/box2d/collision/shapes/b2ShapeDef.min.js'></script>
+    <script src='js/box2d/collision/shapes/b2BoxDef.min.js'></script>
+    <script src='js/box2d/collision/shapes/b2CircleDef.min.js'></script>
+    <script src='js/box2d/collision/shapes/b2CircleShape.min.js'></script>
+    <script src='js/box2d/collision/shapes/b2MassData.min.js'></script>
+    <script src='js/box2d/collision/shapes/b2PolyDef.min.js'></script>
+    <script src='js/box2d/collision/shapes/b2PolyShape.min.js'></script>
+    <script src='js/box2d/dynamics/b2Body.min.js'></script>
+    <script src='js/box2d/dynamics/b2BodyDef.min.js'></script>
+    <script src='js/box2d/dynamics/b2CollisionFilter.min.js'></script>
+    <script src='js/box2d/dynamics/b2Island.min.js'></script>
+    <script src='js/box2d/dynamics/b2TimeStep.min.js'></script>
+    <script src='js/box2d/dynamics/contacts/b2ContactNode.min.js'></script>
+    <script src='js/box2d/dynamics/contacts/b2Contact.min.js'></script>
+    <script src='js/box2d/dynamics/contacts/b2ContactConstraint.min.js'></script>
+    <script src='js/box2d/dynamics/contacts/b2ContactConstraintPoint.min.js'></script>
+    <script src='js/box2d/dynamics/contacts/b2ContactRegister.min.js'></script>
+    <script src='js/box2d/dynamics/contacts/b2ContactSolver.min.js'></script>
+    <script src='js/box2d/dynamics/contacts/b2CircleContact.min.js'></script>
+    <script src='js/box2d/dynamics/contacts/b2Conservative.min.js'></script>
+    <script src='js/box2d/dynamics/contacts/b2NullContact.min.js'></script>
+    <script src='js/box2d/dynamics/contacts/b2PolyAndCircleContact.min.js'></script>
+    <script src='js/box2d/dynamics/contacts/b2PolyContact.min.js'></script>
+    <script src='js/box2d/dynamics/b2ContactManager.min.js'></script>
+    <script src='js/box2d/dynamics/b2World.min.js'></script>
+    <script src='js/box2d/dynamics/b2WorldListener.min.js'></script>
+    <script src='js/box2d/dynamics/joints/b2JointNode.min.js'></script>
+    <script src='js/box2d/dynamics/joints/b2Joint.min.js'></script>
+    <script src='js/box2d/dynamics/joints/b2JointDef.min.js'></script>
+    <script src='js/box2d/dynamics/joints/b2DistanceJoint.min.js'></script>
+    <script src='js/box2d/dynamics/joints/b2DistanceJointDef.min.js'></script>
+    <script src='js/box2d/dynamics/joints/b2Jacobian.min.js'></script>
+    <script src='js/box2d/dynamics/joints/b2GearJoint.min.js'></script>
+    <script src='js/box2d/dynamics/joints/b2GearJointDef.min.js'></script>
+    <script src='js/box2d/dynamics/joints/b2MouseJoint.min.js'></script>
+    <script src='js/box2d/dynamics/joints/b2MouseJointDef.min.js'></script>
+    <script src='js/box2d/dynamics/joints/b2PrismaticJoint.min.js'></script>
+    <script src='js/box2d/dynamics/joints/b2PrismaticJointDef.min.js'></script>
+    <script src='js/box2d/dynamics/joints/b2PulleyJoint.min.js'></script>
+    <script src='js/box2d/dynamics/joints/b2PulleyJointDef.min.js'></script>
+    <script src='js/box2d/dynamics/joints/b2RevoluteJoint.min.js'></script>
+    <script src='js/box2d/dynamics/joints/b2RevoluteJointDef.min.js'></script>
+		<!--=============================-->
+		
+	<script> var canvas, context;</script>
+	<script type="text/javascript" src='js/tutorial/utilities.js'></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/tutorial/graphics.js"></script>
+	<script type="text/javascript" src="js/tutorial/test.script.js"></script>
+	<script type="text/javascript" src='js/tutorial/controller.js'></script>
+	<script type="text/javascript"src='js/tutorial/mechanisms.js'></script>
+	
+</html>
